@@ -33,6 +33,15 @@ FAT: 1024 entradas de 4 bytes ocupan 4096 bytes = 64 bloques. Sumando 1 superblo
 
 ## Rutas y preparación manual
 
+Desde la raíz del clon `entrenados-pruebas`, ejecutar en cada terminal:
+
+```bash
+cd checkpoints/checkpoint_2
+pwd
+```
+
+La salida de `pwd` debe terminar en `/entrenados-pruebas/checkpoints/checkpoint_2`. Si ya se está allí, no repetir el `cd`. Luego seguir la preparación y los comandos del README del escenario elegido.
+
 Usar directamente las configs de cada escenario. Sus rutas relativas se resuelven desde la carpeta `checkpoints/checkpoint_2/`: todos los módulos deben arrancarse desde esa carpeta (no desde la raíz de `entrenados-pruebas`), aunque sus binarios estén en otro lugar.
 
 Antes de arrancar, crear los directorios de datos y Storage indicados en el README del escenario. `offload.dat` y `reportes.log` son salidas de los módulos; no crearlos vacíos por adelantado. Conservar los datos y las evidencias existentes antes de repetir.
@@ -43,7 +52,7 @@ Los comandos de arranque pasan el Job inicial como ruta absoluta mediante `"$PWD
 
 ### Si se arranca desde otra carpeta
 
-Editar manualmente los siguientes campos con rutas absolutas del clon y del escenario elegido. Por ejemplo, para un clon en `/home/utnso/entrenados-pruebas/checkpoints/checkpoint_2` y el escenario `03_rr_un_core`:
+Editar manualmente los siguientes campos con rutas absolutas del clon y del escenario elegido. Por ejemplo, para un clon en `/home/utnso/entrenados-pruebas` y el escenario `03_rr_un_core`:
 
 | Módulo | Campo | Ruta absoluta de ejemplo |
 | --- | --- | --- |

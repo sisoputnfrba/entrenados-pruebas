@@ -17,7 +17,7 @@ Configs completas: [Planificador](configs/planificador.config), [Placa](configs/
 
 ## Preparar
 
-Desde la carpeta `checkpoints/checkpoint_2/` del repositorio de pruebas, crear las carpetas de salida:
+En cada terminal, partir de la raíz del clon `entrenados-pruebas` y entrar a CP2. Crear las carpetas de salida una sola vez antes del arranque:
 
 ```bash
 # Desde la raíz de entrenados-pruebas, en cada terminal:
@@ -25,7 +25,7 @@ cd checkpoints/checkpoint_2
 mkdir -p runtime/02_fifo_un_core/datos runtime/02_fifo_un_core/storage
 ```
 
-Usar directamente las configs de `escenarios/02_fifo_un_core/configs/`. Mantener todas las terminales en la raíz del repositorio para que las rutas relativas funcionen. Para usar otra carpeta de trabajo, ajustar manualmente los paths según la [guía de configuración](../../docs/configuracion.md).
+Usar directamente las configs de `escenarios/02_fifo_un_core/configs/`. Mantener todas las terminales en `checkpoints/checkpoint_2/` para que las rutas relativas funcionen. Si ya se está en esa carpeta, no repetir el comando `cd`. Para usar otra carpeta de trabajo, ajustar manualmente los paths según la [guía de configuración](../../docs/configuracion.md).
 
 ## Arrancar
 
