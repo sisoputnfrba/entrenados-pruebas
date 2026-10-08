@@ -17,14 +17,14 @@ Rama de integración: `feat/incorporar-checkpoint-2`.
 | `.gitignore` | `checkpoints/checkpoint_2/.gitignore` más la regla global `**/runtime/` |
 | `runtime/` (no versionado) | `checkpoints/checkpoint_2/runtime/` (generado durante la ejecución) |
 
-Se preservan los 49 archivos versionados del origen, la estructura interna, las extensiones `.txt`, las instrucciones y las configs. El ejemplo de entrenamiento existente permanece en `ejemplo_job/`.
+Se trasladan los 49 archivos versionados del origen conservando la estructura interna. Los 9 Jobs individuales y los 2 launchers se renombran a `.asm`; sus instrucciones se conservan, actualizando únicamente las extensiones de las referencias `INIT_JOB`. Las configs no cambian. El ejemplo de entrenamiento existente permanece en `ejemplo_job/`.
 
 ## Resolución de referencias internas
 
 - Enlaces Markdown: relativos al documento que los contiene. Al mover juntos los directorios internos, conservan sus destinos.
 - Configs y comandos con `$PWD`: directorio de trabajo `checkpoints/checkpoint_2/`. Cada terminal debe ubicarse allí antes de arrancar; los README incluyen el cambio de directorio desde la raíz del clon.
 - `PATH_INSTRUCCIONES=./scripts/`: apunta a `checkpoints/checkpoint_2/scripts/`.
-- `INIT_JOB individuales/<archivo>.txt`: relativo a `PATH_INSTRUCCIONES`, no al launcher ni a la raíz de `entrenados-pruebas`.
+- `INIT_JOB individuales/<archivo>.asm`: relativo a `PATH_INSTRUCCIONES`, no al launcher ni a la raíz de `entrenados-pruebas`.
 - `PATH_DATOS`, `PATH_REPORTES`, `PATH_OFFLOAD` y `PATH_STORAGE`: salidas en `checkpoints/checkpoint_2/runtime/<escenario>/`; los README preparan las carpetas necesarias.
 - Job inicial: los comandos pasan una ruta absoluta con `$PWD/scripts/...`. La guía explica la alternativa relativa para implementaciones que la requieran.
 
@@ -45,7 +45,7 @@ Agregar CP3 en `checkpoints/checkpoint_3/` y las pruebas finales en `entregas_fi
 
 ## Validación de la migración
 
-Se verificaron los 49 archivos trasladados, 81 enlaces Markdown (incluidos sus anclajes), 31 referencias de arranque con `$PWD`, 25 configs y las 7 referencias `INIT_JOB` de los launchers contra la raíz de instrucciones de los 6 escenarios. Las 24 rutas de salida tienen sus carpetas de preparación documentadas y quedan ignoradas por Git. Los Jobs, launchers y configs coinciden byte a byte con el origen; el ejemplo existente también se conserva.
+Se verificaron los 49 archivos trasladados, 81 enlaces Markdown (incluidos sus anclajes), 31 referencias de arranque con `$PWD`, 25 configs y las 7 referencias `INIT_JOB` de los launchers contra la raíz de instrucciones de los 6 escenarios. Las 24 rutas de salida tienen sus carpetas de preparación documentadas y quedan ignoradas por Git. Los Jobs individuales y las configs coinciden byte a byte con el origen; en los launchers solo cambia la extensión de las referencias `INIT_JOB`. El ejemplo existente también se conserva.
 
 Una simulación de las instrucciones de los 9 Jobs individuales confirmó la cantidad de instrucciones ejecutadas, el PC de EXIT y todos los registros finales contra las tablas de resultados. Esto valida los archivos de prueba, no la implementación de los módulos: la ejecución integrada requiere Linux y los binarios de cada grupo.
 

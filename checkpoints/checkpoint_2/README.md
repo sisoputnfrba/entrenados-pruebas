@@ -7,11 +7,11 @@ Pseudocódigos, configuraciones completas y resultados esperados para instruccio
 | Escenario | Algoritmo | Cores | Cupo | Job inicial |
 | --- | --- | ---: | ---: | --- |
 | [01 · Instrucciones aisladas](escenarios/01_instrucciones/README.md) | FIFO | 1 | 1 | cada archivo individual |
-| [02 · FIFO](escenarios/02_fifo_un_core/README.md) | FIFO | 1 | 5 | fifo.txt |
-| [03 · RR](escenarios/03_rr_un_core/README.md) | RR | 1 | 5 | rr.txt |
-| [04 · RR concurrente](escenarios/04_rr_dos_cores/README.md) | RR | 2 | 5 | rr.txt |
-| [05 · Multiprogramación 1](escenarios/05_multiprogramacion/grado_1/README.md) | RR | 1 | 1 | rr.txt |
-| [05 · Multiprogramación 2](escenarios/05_multiprogramacion/grado_2/README.md) | RR | 1 | 2 | rr.txt |
+| [02 · FIFO](escenarios/02_fifo_un_core/README.md) | FIFO | 1 | 5 | fifo.asm |
+| [03 · RR](escenarios/03_rr_un_core/README.md) | RR | 1 | 5 | rr.asm |
+| [04 · RR concurrente](escenarios/04_rr_dos_cores/README.md) | RR | 2 | 5 | rr.asm |
+| [05 · Multiprogramación 1](escenarios/05_multiprogramacion/grado_1/README.md) | RR | 1 | 1 | rr.asm |
+| [05 · Multiprogramación 2](escenarios/05_multiprogramacion/grado_2/README.md) | RR | 1 | 2 | rr.asm |
 
 Las pruebas 01 se ejecutan aisladas, sin launcher. Los demás escenarios usan INIT_JOB para crear varios Jobs. Los scripts terminan con EXIT.
 

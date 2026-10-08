@@ -11,7 +11,7 @@ El lanzador termina sin bloquearse. Sus hijos ejecutan A, B, corto en ese orden,
 | Multiprogramación | 5 |
 | Quantum RR | 2000 ms (ignorado por FIFO) |
 | Retardo de respuesta de Placa | 500 ms |
-| Job inicial por defecto | `launchers/fifo.txt` |
+| Job inicial por defecto | `launchers/fifo.asm` |
 
 Configs completas: [Planificador](configs/planificador.config), [Placa](configs/placa.config), [Storage](configs/storage.config), [Core 1](configs/core-1.config).
 
@@ -39,7 +39,7 @@ Abrir 4 terminales. En cada una, ubicarse en la carpeta `checkpoints/checkpoint_
 /ruta/al/tp/bin/placa "$PWD/escenarios/02_fifo_un_core/configs/placa.config"
 
 # Terminal 3
-/ruta/al/tp/bin/planificador "$PWD/escenarios/02_fifo_un_core/configs/planificador.config" "$PWD/scripts/launchers/fifo.txt"
+/ruta/al/tp/bin/planificador "$PWD/escenarios/02_fifo_un_core/configs/planificador.config" "$PWD/scripts/launchers/fifo.asm"
 
 # Terminal 4
 /ruta/al/tp/bin/core "$PWD/escenarios/02_fifo_un_core/configs/core-1.config" 1

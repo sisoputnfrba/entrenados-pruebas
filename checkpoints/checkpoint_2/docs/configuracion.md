@@ -46,9 +46,9 @@ Usar directamente las configs de cada escenario. Sus rutas relativas se resuelve
 
 Antes de arrancar, crear los directorios de datos y Storage indicados en el README del escenario. `offload.dat` y `reportes.log` son salidas de los módulos; no crearlos vacíos por adelantado. Conservar los datos y las evidencias existentes antes de repetir.
 
-Los pseudocódigos están en `scripts/individuales/` y `scripts/launchers/`. `PATH_INSTRUCCIONES=./scripts/` es la raíz común: los launchers usan `INIT_JOB individuales/<archivo>.txt`, relativo a esa raíz, no a la carpeta del launcher. No modificar los saltos JNZ.
+Los pseudocódigos están en `scripts/individuales/` y `scripts/launchers/`. `PATH_INSTRUCCIONES=./scripts/` es la raíz común: los launchers usan `INIT_JOB individuales/<archivo>.asm`, relativo a esa raíz, no a la carpeta del launcher. No modificar los saltos JNZ.
 
-Los comandos de arranque pasan el Job inicial como ruta absoluta mediante `"$PWD/scripts/..."`. Placa debe aceptar esa ruta sin anteponer `PATH_INSTRUCCIONES`. El enunciado no detalla cómo normalizar paths; si la implementación solo acepta nombres relativos, pasar `launchers/fifo.txt`, `launchers/rr.txt` o `individuales/<archivo>.txt` como Job inicial, conservando la misma raíz de instrucciones.
+Los comandos de arranque pasan el Job inicial como ruta absoluta mediante `"$PWD/scripts/..."`. Placa debe aceptar esa ruta sin anteponer `PATH_INSTRUCCIONES`. El enunciado no detalla cómo normalizar paths; si la implementación solo acepta nombres relativos, pasar `launchers/fifo.asm`, `launchers/rr.asm` o `individuales/<archivo>.asm` como Job inicial, conservando la misma raíz de instrucciones.
 
 ### Si se arranca desde otra carpeta
 

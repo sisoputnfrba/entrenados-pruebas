@@ -35,7 +35,7 @@ Mantener ese directorio de trabajo en todas las terminales de los módulos. Las 
 
 ## Cómo usar estos archivos
 
-Los Jobs se publican en `.txt` (CP2) o `.asm` (ejemplo de entrenamiento). Mantener los nombres y extensiones indicados en cada prueba: ambos contienen instrucciones de EntrenadOS.
+Todos los pseudocódigos, incluidos los Jobs y launchers de CP2 y el ejemplo de entrenamiento, se publican en `.asm`. Mantener los nombres indicados en cada prueba: las referencias de `INIT_JOB` y los comandos de arranque usan esa extensión.
 
 Cada escenario de CP2 incluye configs completas y comandos de preparación y arranque. Requiere Linux y los módulos del grupo compilados; ajustar la ruta de sus binarios según la [guía de configuración](checkpoints/checkpoint_2/docs/configuracion.md).
 

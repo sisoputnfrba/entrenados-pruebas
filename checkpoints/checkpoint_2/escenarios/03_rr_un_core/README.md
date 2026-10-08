@@ -11,7 +11,7 @@ A y B se desalojan por quantum y retoman sin perder PC ni registros. La selecci√
 | Multiprogramaci√≥n | 5 |
 | Quantum RR | 2000 ms |
 | Retardo de respuesta de Placa | 500 ms |
-| Job inicial por defecto | `launchers/rr.txt` |
+| Job inicial por defecto | `launchers/rr.asm` |
 
 Configs completas: [Planificador](configs/planificador.config), [Placa](configs/placa.config), [Storage](configs/storage.config), [Core 1](configs/core-1.config).
 
@@ -39,7 +39,7 @@ Abrir 4 terminales. En cada una, ubicarse en la carpeta `checkpoints/checkpoint_
 /ruta/al/tp/bin/placa "$PWD/escenarios/03_rr_un_core/configs/placa.config"
 
 # Terminal 3
-/ruta/al/tp/bin/planificador "$PWD/escenarios/03_rr_un_core/configs/planificador.config" "$PWD/scripts/launchers/rr.txt"
+/ruta/al/tp/bin/planificador "$PWD/escenarios/03_rr_un_core/configs/planificador.config" "$PWD/scripts/launchers/rr.asm"
 
 # Terminal 4
 /ruta/al/tp/bin/core "$PWD/escenarios/03_rr_un_core/configs/core-1.config" 1

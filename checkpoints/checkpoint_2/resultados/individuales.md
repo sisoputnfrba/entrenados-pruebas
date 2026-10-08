@@ -6,17 +6,17 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 | Archivo | Instrucciones (incluye EXIT) | PC de EXIT |
 | --- | ---: | ---: |
-| [01_noop.txt](../scripts/individuales/01_noop.txt) | 3 | 2 |
-| [02_aritmetica.txt](../scripts/individuales/02_aritmetica.txt) | 8 | 7 |
-| [03_jnz_cero.txt](../scripts/individuales/03_jnz_cero.txt) | 5 | 4 |
-| [04_jnz_salto.txt](../scripts/individuales/04_jnz_salto.txt) | 4 | 5 |
-| [05_loop.txt](../scripts/individuales/05_loop.txt) | 19 | 6 |
-| [06_contexto_a.txt](../scripts/individuales/06_contexto_a.txt) | 814 | 17 |
-| [07_contexto_b.txt](../scripts/individuales/07_contexto_b.txt) | 614 | 17 |
-| [08_corto.txt](../scripts/individuales/08_corto.txt) | 3 | 2 |
-| [09_registros_cero.txt](../scripts/individuales/09_registros_cero.txt) | 14 | 13 |
+| [01_noop.asm](../scripts/individuales/01_noop.asm) | 3 | 2 |
+| [02_aritmetica.asm](../scripts/individuales/02_aritmetica.asm) | 8 | 7 |
+| [03_jnz_cero.asm](../scripts/individuales/03_jnz_cero.asm) | 5 | 4 |
+| [04_jnz_salto.asm](../scripts/individuales/04_jnz_salto.asm) | 4 | 5 |
+| [05_loop.asm](../scripts/individuales/05_loop.asm) | 19 | 6 |
+| [06_contexto_a.asm](../scripts/individuales/06_contexto_a.asm) | 814 | 17 |
+| [07_contexto_b.asm](../scripts/individuales/07_contexto_b.asm) | 614 | 17 |
+| [08_corto.asm](../scripts/individuales/08_corto.asm) | 3 | 2 |
+| [09_registros_cero.asm](../scripts/individuales/09_registros_cero.asm) | 14 | 13 |
 
-## 01_noop.txt
+## 01_noop.asm
 
 ### Registros finales
 
@@ -40,7 +40,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 `0 → 1 → 2`
 
-## 02_aritmetica.txt
+## 02_aritmetica.asm
 
 ### Registros finales
 
@@ -64,7 +64,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 `0 → 1 → 2 → 3 → 4 → 5 → 6 → 7`
 
-## 03_jnz_cero.txt
+## 03_jnz_cero.asm
 
 ### Registros finales
 
@@ -88,7 +88,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 `0 → 1 → 2 → 3 → 4`
 
-## 04_jnz_salto.txt
+## 04_jnz_salto.asm
 
 ### Registros finales
 
@@ -112,7 +112,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 `0 → 1 → 4 → 5`
 
-## 05_loop.txt
+## 05_loop.asm
 
 ### Registros finales
 
@@ -136,7 +136,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 `0 → 1 → 2 → 3 → 4 → 2 → 3 → 4 → 2 → 3 → 4 → 2 → 3 → 4 → 2 → 3 → 4 → 5 → 6`
 
-## 06_contexto_a.txt
+## 06_contexto_a.asm
 
 ### Registros finales
 
@@ -162,7 +162,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 2. Loop: `13 → 14 → 15 → 16`, repetido **200 veces**.
 3. Finalización: `17` (EXIT).
 
-## 07_contexto_b.txt
+## 07_contexto_b.asm
 
 ### Registros finales
 
@@ -188,7 +188,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 2. Loop: `13 → 14 → 15 → 16`, repetido **150 veces**.
 3. Finalización: `17` (EXIT).
 
-## 08_corto.txt
+## 08_corto.asm
 
 ### Registros finales
 
@@ -212,7 +212,7 @@ PC desde 0. Los registros finales y las secuencias de FETCH se aplican tanto a F
 
 `0 → 1 → 2`
 
-## 09_registros_cero.txt
+## 09_registros_cero.asm
 
 ### Registros finales
 

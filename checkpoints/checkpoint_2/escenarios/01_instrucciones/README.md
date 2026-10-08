@@ -11,7 +11,7 @@ Ejecutar los nueve archivos individualmente. Comparar PC, instrucciones y regist
 | Multiprogramación | 1 |
 | Quantum RR | 20 ms (ignorado por FIFO) |
 | Retardo de respuesta de Placa | 10 ms |
-| Job inicial por defecto | `individuales/01_noop.txt` |
+| Job inicial por defecto | `individuales/01_noop.asm` |
 
 Configs completas: [Planificador](configs/planificador.config), [Placa](configs/placa.config), [Storage](configs/storage.config), [Core 1](configs/core-1.config).
 
@@ -39,7 +39,7 @@ Abrir 4 terminales. En cada una, ubicarse en la carpeta `checkpoints/checkpoint_
 /ruta/al/tp/bin/placa "$PWD/escenarios/01_instrucciones/configs/placa.config"
 
 # Terminal 3
-/ruta/al/tp/bin/planificador "$PWD/escenarios/01_instrucciones/configs/planificador.config" "$PWD/scripts/individuales/01_noop.txt"
+/ruta/al/tp/bin/planificador "$PWD/escenarios/01_instrucciones/configs/planificador.config" "$PWD/scripts/individuales/01_noop.asm"
 
 # Terminal 4
 /ruta/al/tp/bin/core "$PWD/escenarios/01_instrucciones/configs/core-1.config" 1

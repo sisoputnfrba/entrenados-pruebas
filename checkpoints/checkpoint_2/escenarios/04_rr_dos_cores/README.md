@@ -11,7 +11,7 @@ Dos Jobs pueden avanzar simultáneamente. Un mismo JID nunca ejecuta en ambos Co
 | Multiprogramación | 5 |
 | Quantum RR | 2000 ms |
 | Retardo de respuesta de Placa | 500 ms |
-| Job inicial por defecto | `launchers/rr.txt` |
+| Job inicial por defecto | `launchers/rr.asm` |
 
 Configs completas: [Planificador](configs/planificador.config), [Placa](configs/placa.config), [Storage](configs/storage.config), [Core 1](configs/core-1.config), [Core 2](configs/core-2.config).
 
@@ -39,7 +39,7 @@ Abrir 5 terminales. En cada una, ubicarse en la carpeta `checkpoints/checkpoint_
 /ruta/al/tp/bin/placa "$PWD/escenarios/04_rr_dos_cores/configs/placa.config"
 
 # Terminal 3
-/ruta/al/tp/bin/planificador "$PWD/escenarios/04_rr_dos_cores/configs/planificador.config" "$PWD/scripts/launchers/rr.txt"
+/ruta/al/tp/bin/planificador "$PWD/escenarios/04_rr_dos_cores/configs/planificador.config" "$PWD/scripts/launchers/rr.asm"
 
 # Terminal 4
 /ruta/al/tp/bin/core "$PWD/escenarios/04_rr_dos_cores/configs/core-1.config" 1

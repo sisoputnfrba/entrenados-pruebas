@@ -1,5 +1,0 @@
-INIT_JOB individuales/06_contexto_a.txt
-INIT_JOB individuales/07_contexto_b.txt
-INIT_JOB individuales/08_corto.txt
-INIT_JOB individuales/09_registros_cero.txt
-EXIT
