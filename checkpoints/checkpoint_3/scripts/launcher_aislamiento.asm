@@ -1,0 +1,3 @@
+INIT_JOB mini_entrenamiento_a.asm
+INIT_JOB mini_entrenamiento_b.asm
+EXIT

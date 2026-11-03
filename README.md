@@ -5,6 +5,7 @@ Este repositorio centraliza los Jobs, configuraciones y resultados esperados par
 ## Pruebas disponibles
 
 - [Checkpoint 2: planificación y ejecución básica](checkpoints/checkpoint_2/README.md). Incluye instrucciones aisladas, FIFO, RR, cambios de contexto y multiprogramación.
+- [Checkpoint 3: memoria, paginación, servicios y Storage](checkpoints/checkpoint_3/README.md). Incluye datos binarios de entrada y once escenarios con configs propias.
 - [Job de entrenamiento de ejemplo](ejemplo_job/README.md). Usa memoria y servicios; no forma parte de las pruebas de CP2.
 
 ## Organización y próximas entregas
@@ -17,7 +18,13 @@ checkpoints/
     resultados/
     scripts/
     runtime/          # Salidas locales; ignoradas por Git
-  checkpoint_3/       # Próxima publicación
+  checkpoint_3/
+    datos/            # Entradas binarias versionadas
+    docs/
+    escenarios/
+    resultados/
+    scripts/
+    runtime/          # Salidas locales; ignoradas por Git
   checkpoint_4/       # Publicación posterior
 entregas_finales/     # Próximas pruebas de integración final
 ejemplo_job/
@@ -35,10 +42,10 @@ Mantener ese directorio de trabajo en todas las terminales de los módulos. Las 
 
 ## Cómo usar estos archivos
 
-Todos los pseudocódigos, incluidos los Jobs y launchers de CP2 y el ejemplo de entrenamiento, se publican en `.asm`. Mantener los nombres indicados en cada prueba: las referencias de `INIT_JOB` y los comandos de arranque usan esa extensión.
+Todos los pseudocódigos, incluidos los Jobs y launchers de ambos checkpoints y el ejemplo de entrenamiento, se publican en `.asm`. Mantener los nombres indicados en cada prueba: las referencias de `INIT_JOB` y los comandos de arranque usan esa extensión.
 
-Cada escenario de CP2 incluye configs completas y comandos de preparación y arranque. Requiere Linux y los módulos del grupo compilados; ajustar la ruta de sus binarios según la [guía de configuración](checkpoints/checkpoint_2/docs/configuracion.md).
+Cada escenario de CP2 y CP3 incluye configs completas y comandos de preparación y arranque. Requiere Linux y los módulos del grupo compilados; ajustar la ruta de sus binarios según las guías de configuración de [CP2](checkpoints/checkpoint_2/docs/configuracion.md) y [CP3](checkpoints/checkpoint_3/docs/configuracion.md).
 
 Consultar los resultados esperados y conservar las evidencias de cada ejecución antes de repetir.
 
-La incorporación de CP2 y sus referencias están documentadas en el [mapa de migración](docs/migracion-checkpoint-2.md).
+Las incorporaciones y sus referencias están documentadas en los mapas de migración de [CP2](docs/migracion-checkpoint-2.md) y [CP3](docs/migracion-checkpoint-3.md).
