@@ -6,6 +6,7 @@ Este repositorio centraliza los Jobs, configuraciones y resultados esperados par
 
 - [Checkpoint 2: planificación y ejecución básica](checkpoints/checkpoint_2/README.md). Incluye instrucciones aisladas, FIFO, RR, cambios de contexto y multiprogramación.
 - [Checkpoint 3: memoria, paginación, servicios y Storage](checkpoints/checkpoint_3/README.md). Incluye datos binarios de entrada y once escenarios con configs propias.
+- [Entregas Finales: las seis pruebas del Documento de Pruebas Finales](entregas_finales/README.md). Incluye Jobs, datos binarios y configs completas.
 - [Job de entrenamiento de ejemplo](ejemplo_job/README.md). Usa memoria y servicios; no forma parte de las pruebas de CP2.
 
 ## Organización y próximas entregas
@@ -26,7 +27,11 @@ checkpoints/
     scripts/
     runtime/          # Salidas locales; ignoradas por Git
   checkpoint_4/       # Publicación posterior
-entregas_finales/     # Próximas pruebas de integración final
+entregas_finales/
+  datos/              # Entradas binarias versionadas
+  escenarios/
+  scripts/
+  runtime/            # Salidas locales; ignoradas por Git
 ejemplo_job/
 ```
 

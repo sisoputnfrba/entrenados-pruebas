@@ -1,0 +1,3 @@
+INIT_JOB MEM_A.asm
+INIT_JOB MEM_B.asm
+EXIT
